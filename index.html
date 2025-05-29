@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Display section -->
+<div class="options-container bg-gray-800 max-w-full mx-auto">
+  <button class="options relative top-5 right-5 text-3xl sm:text-4xl text-white">
+    :
+  </button>
+</div>
+
+<div class="display w-full h-[30vh] bg-gray-800 rounded-b-[20px] max-w-full mx-auto">
+  <div class="expression pl-[40px] flex justify-end items-center text-4xl sm:text-5xl h-[50%] overflow-x-auto whitespace-nowrap px-4 font-mono text-cyan-200 tracking-widest">
+  0
+  </div>
+  <div class="result h-[50%]"></div>
+</div>
+
+<!-- BUTTONS SECTION -->
+<div class="bg-gray-900 min-h-full w-full max-w-full mx-auto">
+  <div class="flex justify-around flex-wrap">
+    <!-- 1 row -->
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400 to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">AC</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">^</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">%</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">/</button> 
+  </div>
+  <!-- 2 row -->
+  <div class="flex justify-around flex-wrap">
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">7</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">8</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">9</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400 to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">*</button> 
+  </div>
+  <!-- 3 row -->
+  <div class="flex justify-around flex-wrap">
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">4</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">5</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">6</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">-</button> 
+  </div>
+  <!-- 4 row -->
+  <div class="flex justify-around flex-wrap">
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">1</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">2</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">3</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">+</button> 
+  </div>
+  <!-- 5 row -->
+  <div class="flex justify-around flex-wrap">
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">0</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">.</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">DC</button>
+   <button class="btn w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] h-[70px] sm:h-[80px] md:[100px] lg:h-[120px]  bg-gradient-to-tr from-cyan-400  to-black drop-shadow-[0_0_10px_rgba(0,255,255,0.7)] hover:scale-105 transform transition duration-200 ease-in-out text-lg sm:text-2xl rounded-full text-white mt-[30px]">=</button> 
+  </div>
+
+  
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
