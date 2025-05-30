@@ -18,7 +18,7 @@ buttons.forEach(button => {
         } 
         else if (val === "=") {
             try {
-                let replaceSymbols = expression.textContent.replace(/\^/g, '**');
+                let replaceSymbols = expression.textContent.replace(/\^/g, '**').replace(/\%/g, '/100');
                 expression.textContent = eval(replaceSymbols);
             } catch (e) {
                 expression.textContent = "Error";
